@@ -1,0 +1,67 @@
+1 caixa de minoxdill 82 reais
+
+lucro 300 reais - 23 = 277
+
+2 caixas de minoxdill = 164 reais lucro = 600 reais - 23 -23 2 frete = 554 
+
+6 caixa minoxdill = 492 reais lucro = 1800 - o frete 1662 - 492 = 1170
+
+
+12 caixas monixdill = 948 reais lucro = 3600 - o frete =  3324 - 948 = 2376
+
+
+aprender seo
+
+
+
+1- ele usou uma ferramenta para pesquisar palavras chafe, pesquisar termos mais especificos e que sejam pouco hanckiado tenhan o pa baixo
+
+
+2- escolher palavra com media de 1000 busca mes e escrever varios posts com palavras chaves nessa media 
+
+
+3- otimiar post yoast seo
+
+4- lincagem interna de postagem indiando outras postagens do seu blog
+
+
+
+
+
+
+
+<div id="footer">
+  
+ 
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-12 brandft">
+              <p class="brand"><span>9Mobile</span></p>
+            </div>
+            <div class="col-md-8 col-12 links">
+             
+              <a href="home-masonry.html">Home</a>
+            
+             <a href="https://9mobile.com.br/contato/">contato</a>
+           
+            </div>
+            <div class="col-md-2 col-12 icones28">
+			
+            
+                <a href="#"><i class="fab fa-facebook-f "></i></a>
+               <a href="#"><i class="fab fa-twitter "></i></a>
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+  
+	
+	<?php wp_footer(); ?>
+	</body>
+</html>
+
+
+
+

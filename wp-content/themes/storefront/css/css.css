@@ -1,0 +1,115 @@
+ .navbar-default{
+	 
+	  background-color:rgba(0,0,128,0.5);
+	  border:transparent;
+	     
+	 
+ }
+ 
+ 
+ .navbar-inverse{
+	   border:transparent;
+	 background-color:rgba(0,0,128,0.1);
+	 
+ }
+ 
+ .product-category product first{
+	display:none;
+	
+		
+}
+ 
+ #iconemenu{
+	 margin-left:15px;
+	 margin-top:5px;
+ }
+ 
+ 
+ 
+ #iconemenu  p{
+	 
+	 
+ }
+ 
+ 
+ #menu-principal li{
+
+	 
+ }
+ 
+ 
+ #menu-second li {
+	
+	  color:black;
+	 
+ }
+ 
+ 
+ .woocommerce-products-header{
+	 
+ }
+ 
+ 
+ 
+#botaonav{
+	margin-top:25px;
+	margin-right:2px;
+	
+	
+}
+
+#botaonav2{
+	margin-top:5px;
+	
+}
+
+
+
+
+.woocommerce-products-header{
+	padding-top:200px;
+}
+
+
+
+
+.logo{
+	
+	margin-left:20px;
+	margin-top:0px;
+	
+	
+	
+}
+
+.navbar-nav li{
+	border-right: 1px solid rgb(106,90,205);
+	font-size:15px;
+}
+
+
+.navbar-form{
+		
+	text-align:center;
+
+	margin-top:25px;
+		
+	margin:transparent;
+	
+	
+}
+
+
+
+
+#formulario{
+	
+	
+	
+}
+
+
+.navbar-inverse{
+	margin-top:-20px;
+}
+
