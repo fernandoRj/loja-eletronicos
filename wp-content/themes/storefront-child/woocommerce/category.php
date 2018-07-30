@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Archives
+Template Name: categorias
 */
 get_header(); ?>
 <?php 
@@ -32,22 +32,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	
 
-  <div class="col-md-4 col-sm-6 col-xs-12 thumbdiv1">
+
+     <div class="tamanho col-xs-12 col-md-6">
     <div class="thumbnail1">
 	  <?php woocommerce_template_loop_product_link_open ()?>
+        
       <?php woocommerce_template_loop_product_thumbnail()?> 
+            
       <div class="caption" id="caption1">
 	  
-         <?php woocommerce_template_loop_product_title()?> 
-		<?php woocommerce_template_loop_price()?> 
-		<?php woocommerce_template_loop_product_link_close ()?>
-        <?php woocommerce_template_loop_rating()?>
-		
-        <?php woocommerce_template_loop_add_to_cart ()?>
+        <h1 > <?php woocommerce_template_loop_product_title()?> </h1>
+		<p class="price1"><?php woocommerce_template_loop_price()?> </p>
+        <p><?php woocommerce_template_loop_rating()?></p>
+		<p> <?php the_content() ?></p>
+      
       </div>
+    
+	  <?php woocommerce_template_loop_add_to_cart ()?>
+        
     </div>
-  
+   
+
+
+
+
 </div>
+
 
 	
 

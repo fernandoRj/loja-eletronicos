@@ -1,9 +1,11 @@
+
+
 <?php
 /**
  * The header for our theme.
  *
  * Displays all of the <head> section and everything up till <div id="content">
- *
+ * Template name: header
  * @package storefront
  */
 
@@ -102,13 +104,14 @@
 	 
 	 
 
+
    
  
   </div>
               </div>
               <div class="col-xs-6 tamanho1">
                 <ul class="list-inline float-right top-right tamanho25">
-                  <li class="account-login"><span><a data-toggle="modal" href="https://digitalmobiletecnologia.com.br/my-account/">Log in</a><small>ou</small><a data-toggle="modal" href="https://digitalmobiletecnologia.com.br/checkout/">pagamento</a></span></li>
+                  <li class="account-login"><span><a data-toggle="modal" href="<?php echo rwmb_meta( 'login' );?>"><?php echo rwmb_meta( 'texto' );?></a><small>ou</small><a data-toggle="modal" href="https://digitalmobiletecnologia.com.br/checkout/">pagamento</a></span></li>
                   <li class="searchBox">
                     <a data-toggle="dropdown" href="#"><i class="fa fa-search"></i></a>
                     <ul class="dropdown-menu dropdown-menu-right dprmn1">
@@ -151,15 +154,23 @@
 	  
 		
 	
-     <div class="collapse navbar-collapse" id="myNavbar3">
-      <ul class="nav navbar-nav nave98 navbar-right">
-        <li class="active"><a href="https://digitalmobiletecnologia.com.br/categoria-produto/samsung/"><b>samsung</b></a></li>
-        <li><a href="https://digitalmobiletecnologia.com.br/categoria-produto/apple/"><b>Apple</b></a></li>
+      
+        <?php 
+wp_nav_menu( array(
+	'theme_location'  => 'primary',
+	'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+	'container'       => 'div',
+	'container_class' => 'collapse navbar-collapse',
+	'container_id'    => 'myNavbar3',
+	'menu_class'      => 'navbar-nav mr-auto nave98 navbar-right',
+	'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+	'walker'          => new WP_Bootstrap_Navwalker(),
+) );?>
       
        
-      </ul>
+  
     
-    </div>
+
 		
 		
 		

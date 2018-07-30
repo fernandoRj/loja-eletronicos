@@ -230,3 +230,142 @@ wp_enqueue_script( 'fontawesome-all', get_template_directory_uri() . '/js/fontaw
 }
 
 add_action( 'wp_enqueue_scripts', 'scripts' );
+
+
+
+require_once('wp-bootstrap-navwalker.php');
+
+
+
+
+
+register_nav_menus( array(
+	'primary' => __( 'Primary Menu', 'storefront-child' ),
+) );
+
+
+
+
+
+
+
+
+
+function campos( $meta_boxes ) {
+	$prefix = 'prefix-';
+
+	$meta_boxes[] = array(
+		'id' => 'campos',
+		'title' => esc_html__( 'campos', 'metabox-online-generator' ),
+		'post_types' => array( 'page' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => false,
+		'fields' => array(
+			array(
+				'id' => 'login',
+				'type' => 'url',
+				'name' => esc_html__( 'login-link', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'insira link para o login', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'insira um link', 'metabox-online-generator' ),
+				'size' => 15,
+				'attributes' => array(),
+			),
+            
+            	array(
+				'id' => 'pagamento',
+				'type' => 'url',
+				'name' => esc_html__( 'pagamento-link', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'insira link para o pagamento', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'insira um link', 'metabox-online-generator' ),
+				'size' => 15,
+				'attributes' => array(),
+			),
+            
+            array(
+				'id' => 'texto',
+				'type' => 'text',
+				'name' => esc_html__( 'texto-login', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'texto-login', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'insira o texto', 'metabox-online-generator' ),
+				'size' => 15,
+			),
+            
+            
+              array(
+				'id' => 'texto-pg',
+				'type' => 'text',
+				'name' => esc_html__( 'texto-pg', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'texto-pg', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'insira o texto', 'metabox-online-generator' ),
+				'size' => 15,
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'campos' );
+
+
+
+
+
+
+
+function footer( $meta_boxes ) {
+	$prefix = 'prefix-';
+
+	$meta_boxes[] = array(
+		'id' => 'footer',
+		'title' => esc_html__( 'footer', 'metabox-online-generator' ),
+		'post_types' => array( 'page' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => false,
+		'fields' => array(
+			array(
+				'id' => 'url1',
+				'type' => 'url',
+				'name' => esc_html__( 'URL', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'insira a url', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'insira a url', 'metabox-online-generator' ),
+				'size' => 30,
+              
+			),
+            
+            	array(
+				'id' => 'url2',
+				'type' => 'url',
+				'name' => esc_html__( 'URL', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'insira a url', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'insira a url', 'metabox-online-generator' ),
+				'size' => 30,
+              
+			),
+            
+            	array(
+				'id' => 'url3',
+				'type' => 'url',
+				'name' => esc_html__( 'URL', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'insira a url', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'insira a url', 'metabox-online-generator' ),
+				'size' => 30,
+              
+			),
+            
+            	array(
+				'id' => 'url4',
+				'type' => 'url',
+				'name' => esc_html__( 'URL', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'insira a url', 'metabox-online-generator' ),
+				'placeholder' => esc_html__( 'insira a url', 'metabox-online-generator' ),
+				'size' => 30,
+              
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'footer' );
