@@ -22,41 +22,15 @@
 				<div class="container">
 					<div class="row">
 					
-						<div class="col-md-4 col-12">
-							<div class="footerLink">
-								<h5>Menu</h5>
-								<ul class="list-unstyled">
-                                
-									<li><a href="<?php echo rwmb_meta( 'url1' );?>">Shop</a></li>
-									<li><a href="<?php echo rwmb_meta( 'url2' );?>">Minhas compras</a></li>
-									<li><a href="<?php echo rwmb_meta( 'url3' );?>">Minha conta</a></li>
-									<li><a href="<?php echo rwmb_meta( 'url4' );?>">Pagar</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-4 col-12">
-							<div class="footerLink">
-								<h5>Categorias</h5>
-								<ul class="list-unstyled">
-									<li><a href="https://digitalmobiletecnologia.com.br/categoria-produto/apple/">Apple</a></li>
-									<li><a href="https://digitalmobiletecnologia.com.br/categoria-produto/samsung/">Samsung </a></li>
-									
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-4 col-12">
-							<div class="footerLink">
-								<h5>Contato</h5>
-								<ul class="list-unstyled">
-									<li>Tel: (31) 3351.3072</li>
-									<li>whatsapp:(31) 997354628</li>
-									
-									
-									<li><a href="mailto:support@iamabdus.com">sugestoes@digitalmobiletecnologia.com.br</a></li>
-								</ul>
-							
-							</div>
-						</div>
+    <?php if ( is_active_sidebar( 'home_right_1' ) ) : ?>
+                        
+    <div id="" class="footer-widget" >
+       
+    <?php dynamic_sidebar( 'home_right_1' ); ?>
+          
+    </div>
+     
+<?php endif; ?>
 					
 					</div>
 				</div>

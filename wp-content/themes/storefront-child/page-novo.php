@@ -1,5 +1,7 @@
 <?php /* Template name: novo */ ?>
 <?php get_header(); ?>
+
+
 <?php print_r($posts_slides); ?>
 <div id="myCarousel" class="carousel slide">
    <ol class="carousel-indicators">
@@ -96,7 +98,12 @@
    </div>
 </div>
 <div class="row" id="areasite">
-   <div class="col-md-12 col-xs-12 principal1" >
+    <div class="vertical-menu col-md-2">
+	<?php get_sidebar()?>
+	</div>
+
+    
+   <div class="col-md-8 col-xs-12 principal1" >
      
       <div class="row coluna1">
          <div class="container-fluid">

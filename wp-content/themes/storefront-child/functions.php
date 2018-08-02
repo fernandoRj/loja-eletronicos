@@ -369,3 +369,40 @@ function footer( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'footer' );
+
+
+
+
+
+function wpb_widgets_init() {
+ 
+    register_sidebar( array(
+        'name'          => 'Custom Header Widget Area',
+        'id'            => 'custom-header-widget',
+        'before_widget' => '<div class="">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+    ) );
+ 
+}
+add_action( 'widgets_init', 'wpb_widgets_init' );
+
+
+
+
+
+
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'footer-widget',
+		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		 'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );

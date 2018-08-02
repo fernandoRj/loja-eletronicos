@@ -69,7 +69,7 @@
         <div class="topBar">
           <div class="container">
             <div class="row">
-              <div class="col-xs-6  tamanho2">
+              <div class="col-xs-12 col-md-4  tamanho2">
             	
     <div class="dropdown dprin1 ">
 	
@@ -108,28 +108,22 @@
    
  
   </div>
+        
               </div>
-              <div class="col-xs-6 tamanho1">
-                <ul class="list-inline float-right top-right tamanho25">
-                  <li class="account-login"><span><a data-toggle="modal" href="<?php echo rwmb_meta( 'login' );?>"><?php echo rwmb_meta( 'texto' );?></a><small>ou</small><a data-toggle="modal" href="https://digitalmobiletecnologia.com.br/checkout/">pagamento</a></span></li>
-                  <li class="searchBox">
-                    <a data-toggle="dropdown" href="#"><i class="fa fa-search"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-right dprmn1">
-                      <li>
-                        <span class="input-group">
-                          <input type="text" class="form-control" placeholder="Search…" aria-describedby="basic-addon2">
-                          <button type="submit" class="input-group-addon">Submit</button>
-                        </span>
-                      </li>
-                    </ul>
-                  </li>
-              
-                </ul>
-				
-				   
-                   <?php storefront_header_cart()?>
-                  
-              </div>
+             <div class="col-xs-12 col-md-8 tamanho56">
+     
+        <?php
+ 
+if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
+    <div id="" class="conteudo" >
+        <?php storefront_header_cart()?>
+    <?php dynamic_sidebar( 'custom-header-widget' ); ?>
+          
+    </div>
+     
+<?php endif; ?>
+        
+        </div>
             </div>
           </div>
         </div>
